@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minecraft", "Minecraft\Minecraft\Minecraft.csproj", "{BC3B942B-C5A5-4FE4-BB6D-BDDDD04EFDFD}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MinecraftContent", "Minecraft\MinecraftContent\MinecraftContent.contentproj", "{81E68FE9-9C23-41BE-92CB-4F95BBE2BFEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC3B942B-C5A5-4FE4-BB6D-BDDDD04EFDFD}.Debug|x86.ActiveCfg = Debug|x86
+		{BC3B942B-C5A5-4FE4-BB6D-BDDDD04EFDFD}.Debug|x86.Build.0 = Debug|x86
+		{BC3B942B-C5A5-4FE4-BB6D-BDDDD04EFDFD}.Release|x86.ActiveCfg = Release|x86
+		{BC3B942B-C5A5-4FE4-BB6D-BDDDD04EFDFD}.Release|x86.Build.0 = Release|x86
+		{81E68FE9-9C23-41BE-92CB-4F95BBE2BFEC}.Debug|x86.ActiveCfg = Debug|x86
+		{81E68FE9-9C23-41BE-92CB-4F95BBE2BFEC}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Minecraft.exe
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Minecraft.pdb
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.exe
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.pdb
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\VolterGoldfish.xnb
+C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\OggSharpLib.dll
