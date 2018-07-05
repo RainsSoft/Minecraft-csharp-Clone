@@ -1415,7 +1415,6 @@
     <EmbeddedResource Include="Resources\lang\zh_CN.lang" />
     <EmbeddedResource Include="Resources\lang\zh_TW.lang" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--
