@@ -1,1 +1,2 @@
 C:\Users\Michael\Projects\Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\MinecraftContent.contentprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\MinecraftContent\obj\x86\Debug\MinecraftContent.contentprojResolveAssemblyReference.cache

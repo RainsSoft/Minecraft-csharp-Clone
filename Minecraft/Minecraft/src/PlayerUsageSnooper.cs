@@ -33,7 +33,7 @@ namespace net.minecraft.src
 		{
             Action snoopSendDelegate = () =>
             {
-                PostHttp.Func_52018_a(PlayerUsageSnooper.Func_52023_a(this), PlayerUsageSnooper.Func_52020_b(this), true);
+                //PostHttp.Func_52018_a(PlayerUsageSnooper.Func_52023_a(this), PlayerUsageSnooper.Func_52020_b(this), true);
             };
             Thread playerusagesnooperthread = new Thread(new ThreadStart(snoopSendDelegate)) { Name = "reporter" };
 			playerusagesnooperthread.IsBackground = true;

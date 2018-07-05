@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\VolterGoldfish.xnb</Output>
-      <Time>2012-11-20T13:54:14.3346897+10:00</Time>
+      <Output>C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\bin\x86\Debug\Content\VolterGoldfish.xnb</Output>
+      <Time>2012-11-22T22:45:42+11:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -17,10 +17,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Michael\Projects\Minecraft\Minecraft\MinecraftContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Michael\Projects\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\MinecraftContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -49,7 +49,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-10-10T15:57:19.8466165+10:00</Value>
+        <Value>2017-07-18T12:00:31.2169885+10:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
