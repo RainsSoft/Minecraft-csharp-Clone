@@ -489,7 +489,7 @@ namespace net.minecraft.src
 		/// </summary>
 		public void ReleaseImageData(string par1Str)
 		{
-            ThreadedImageDownloader threaddownloadimagedata = null;
+            //ThreadedImageDownloader threaddownloadimagedata = null;
             /*
             if (UrlToImageDataMap.ContainsKey(par1Str))
                 threaddownloadimagedata = UrlToImageDataMap[par1Str];

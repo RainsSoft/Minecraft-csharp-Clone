@@ -253,28 +253,28 @@ namespace net.minecraft.src
 					}
 
 					label1:
-
-					for (int k = par4 - byte0; k <= par4 + byte0; k++)
-					{
-						int i1 = par3 - 1;
-
-						do
-						{
-							if (i1 > par3 + 1)
-							{
-								goto label1;
-							}
-
-							if (par1World.GetBlockId(j, i1, k) == BlockID && --i <= 0)
-							{
-								flag = true;
-								goto label0;
-							}
-
-							i1++;
-						}
-						while (true);
-					}
+				//Unreachable
+					//for (int k = par4 - byte0; k <= par4 + byte0; k++)
+					//{
+					//	int i1 = par3 - 1;
+					//
+					//	do
+					//	{
+					//		if (i1 > par3 + 1)
+					//		{
+					//			goto label1;
+					//		}
+					//
+					//		if (par1World.GetBlockId(j, i1, k) == BlockID && --i <= 0)
+					//		{
+					//			flag = true;
+					//			goto label0;
+					//		}
+					//
+					//		i1++;
+					//	}
+					//	while (true);
+					//}
 
 					j++;
 				}

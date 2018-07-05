@@ -36,7 +36,7 @@ namespace net.minecraft.src
 			WorldInfo worldinfo = isaveformat.GetWorldInfo(WorldName);
 			string s = worldinfo.GetWorldName();
 			TheGuiTextField = new GuiTextField(FontRenderer, Width / 2 - 100, 60, 200, 20);
-			TheGuiTextField.Func_50033_b(true);
+			TheGuiTextField.setFocused(true);
 			TheGuiTextField.SetText(s);
 		}
 

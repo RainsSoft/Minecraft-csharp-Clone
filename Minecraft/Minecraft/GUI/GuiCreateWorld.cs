@@ -96,7 +96,7 @@ namespace net.minecraft.src
 			ControlList.Add(WorldTypeButton = new GuiButton(5, Width / 2 + 5, 100, 150, 20, stringtranslate.TranslateKey("selectWorld.mapType")));
 			WorldTypeButton.ShowButton = false;
 			TextboxWorldName = new GuiTextField(FontRenderer, Width / 2 - 100, 60, 200, 20);
-			TextboxWorldName.Func_50033_b(true);
+			TextboxWorldName.setFocused(true);
 			TextboxWorldName.SetText(LocalizedNewWorldText);
 			TextboxSeed = new GuiTextField(FontRenderer, Width / 2 - 100, 60, 200, 20);
 			TextboxSeed.SetText(Seed);

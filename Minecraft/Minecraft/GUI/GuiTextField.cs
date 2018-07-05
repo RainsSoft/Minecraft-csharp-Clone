@@ -404,7 +404,7 @@ namespace net.minecraft.src
 
 			if (Field_50045_k)
 			{
-				Func_50033_b(Field_50043_m && flag);
+				setFocused(Field_50043_m && flag);
 			}
 
 			if (IsFocused && par3 == 0)
@@ -552,8 +552,10 @@ namespace net.minecraft.src
 		{
 			Field_50044_j = par1;
 		}
-
-		public virtual void Func_50033_b(bool par1)
+		/*
+        Sets focus to this gui element
+        */
+		public virtual void setFocused(bool par1)
 		{
 			if (par1 && !IsFocused)
 			{

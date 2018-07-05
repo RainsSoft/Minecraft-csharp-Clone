@@ -42,7 +42,7 @@ namespace net.minecraft.src
 			ControlList.Add(new GuiButton(1, Width / 2 - 100, Height / 4 + 120 + 12, stringtranslate.TranslateKey("gui.cancel")));
 			ServerTextField = new GuiTextField(FontRenderer, Width / 2 - 100, 116, 200, 20);
 			ServerTextField.SetMaxStringLength(128);
-			ServerTextField.Func_50033_b(true);
+			ServerTextField.setFocused(true);
 			ServerTextField.SetText(Field_52009_d);
 			ControlList[0].Enabled = ServerTextField.GetText().Length > 0 && StringHelperClass.StringSplit(ServerTextField.GetText(), ":", true).Length > 0;
 		}

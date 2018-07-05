@@ -55,7 +55,7 @@ namespace net.minecraft.src
 			Field_50064_a = new GuiTextField(FontRenderer, 4, Height - 12, Width - 4, 12);
 			Field_50064_a.SetMaxStringLength(100);
 			Field_50064_a.Func_50027_a(false);
-			Field_50064_a.Func_50033_b(true);
+			Field_50064_a.setFocused(true);
 			Field_50064_a.SetText(Field_50066_k);
 			Field_50064_a.Func_50026_c(false);
 		}

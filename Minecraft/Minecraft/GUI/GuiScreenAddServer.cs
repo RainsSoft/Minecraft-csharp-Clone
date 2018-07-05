@@ -37,7 +37,7 @@ namespace net.minecraft.src
 			ControlList.Add(new GuiButton(0, Width / 2 - 100, Height / 4 + 96 + 12, stringtranslate.TranslateKey("addServer.add")));
 			ControlList.Add(new GuiButton(1, Width / 2 - 100, Height / 4 + 120 + 12, stringtranslate.TranslateKey("gui.cancel")));
 			ServerName = new GuiTextField(FontRenderer, Width / 2 - 100, 76, 200, 20);
-			ServerName.Func_50033_b(true);
+			ServerName.setFocused(true);
 			ServerName.SetText(ServerNBTStorage.Name);
 			ServerAddress = new GuiTextField(FontRenderer, Width / 2 - 100, 116, 200, 20);
 			ServerAddress.SetMaxStringLength(128);
@@ -87,13 +87,13 @@ namespace net.minecraft.src
 			{
 				if (ServerName.Func_50025_j())
 				{
-					ServerName.Func_50033_b(false);
-					ServerAddress.Func_50033_b(true);
+					ServerName.setFocused(false);
+					ServerAddress.setFocused(true);
 				}
 				else
 				{
-					ServerName.Func_50033_b(true);
-					ServerAddress.Func_50033_b(false);
+					ServerName.setFocused(true);
+					ServerAddress.setFocused(false);
 				}
 			}
 
