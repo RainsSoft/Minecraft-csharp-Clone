@@ -267,7 +267,7 @@ namespace net.minecraft.src
         /// Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
         /// update it's contents.
         ///</summary>
-        public void OnUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, bool par5)
+        public new void OnUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, bool par5)
         {
             if (par2World.IsRemote)
             {
@@ -291,7 +291,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Called when item is crafted/smelted. Used only by maps so far.
         ///</summary>
-        public void OnCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+        public new void OnCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
         {
             par1ItemStack.SetItemDamage(par2World.GetUniqueDataId("map"));
             string s = (new StringBuilder()).Append("map_").Append(par1ItemStack.GetItemDamage()).ToString();

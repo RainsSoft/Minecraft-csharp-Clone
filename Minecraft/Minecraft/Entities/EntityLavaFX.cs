@@ -44,12 +44,12 @@ namespace net.minecraft.src
         ///<summary>
         /// Gets how bright this entity is.
         ///</summary>
-        public float GetBrightness(float par1)
+        public new float GetBrightness(float par1)
         {
             return 1.0F;
         }
 
-        public void RenderParticle(Tessellator par1Tessellator, float par2, float par3, float par4, float par5, float par6, float par7)
+        public new void RenderParticle(Tessellator par1Tessellator, float par2, float par3, float par4, float par5, float par6, float par7)
         {
             float f = ((float)ParticleAge + par2) / (float)ParticleMaxAge;
             ParticleScale = lavaParticleScale * (1.0F - f * f);
@@ -59,7 +59,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Called to update the entity's position/logic.
         ///</summary>
-        public void OnUpdate()
+        public new void OnUpdate()
         {
             PrevPosX = PosX;
             PrevPosY = PosY;

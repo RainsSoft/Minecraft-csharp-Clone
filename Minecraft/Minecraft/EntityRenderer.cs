@@ -558,7 +558,6 @@ namespace net.minecraft.src
             farPlaneDistance = 256 >> mc.GameSettings.RenderDistance;
             //GL.MatrixMode(MatrixMode.Projection);
             //GL.LoadIdentity();
-            float f = 0.07F;
 
             if (mc.GameSettings.Anaglyph)
             {

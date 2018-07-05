@@ -30,7 +30,6 @@ namespace net.minecraft.src
 			if (entity != null)
 			{
 				entity.SetWorld(par1TileEntityMobSpawner.WorldObj);
-				float f = 0.4375F;
 				//GL.Translate(0.0F, 0.4F, 0.0F);
 				//GL.Rotate((float)(par1TileEntityMobSpawner.Yaw2 + (par1TileEntityMobSpawner.Yaw - par1TileEntityMobSpawner.Yaw2) * (double)par8) * 10F, 0.0F, 1.0F, 0.0F);
 				//GL.Rotate(-30F, 1.0F, 0.0F, 0.0F);

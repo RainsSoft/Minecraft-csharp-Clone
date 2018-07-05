@@ -438,7 +438,7 @@ namespace net.minecraft.src
 		/// <summary>
 		/// Returns the ID of the items to drop on destruction.
 		/// </summary>
-		public virtual int IdDropped(int par1, Random par2Random, int par3)
+		public virtual new int IdDropped(int par1, Random par2Random, int par3)
 		{
 			return Item.Redstone.ShiftedIndex;
 		}
@@ -540,7 +540,7 @@ namespace net.minecraft.src
 		/// <summary>
 		/// A randomly called display update to be able to add particles or other items for display
 		/// </summary>
-		public virtual void RandomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
+		public virtual new void RandomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
 		{
 			int i = par1World.GetBlockMetadata(par2, par3, par4);
 

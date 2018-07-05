@@ -226,7 +226,7 @@ namespace net.minecraft.src
 		/// <summary>
 		/// Returns the ID of the items to drop on destruction.
 		/// </summary>
-		public virtual int IdDropped(int par1, Random par2Random, int par3)
+		public new virtual int IdDropped(int par1, Random par2Random, int par3)
 		{
 			if (IsBlockFootOfBed(par1))
 			{

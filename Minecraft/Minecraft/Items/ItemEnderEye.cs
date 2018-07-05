@@ -103,35 +103,35 @@ namespace net.minecraft.src
 					while (true);
 
 					label0:
-
-					for (int j2 = i1 - 1; j2 <= j1 + 1; j2 += 4)
-					{
-						int j3 = 1;
-
-						do
-						{
-							if (j3 > 3)
-							{
-								goto label0;
-							}
-
-							int j4 = par4 + Direction.OffsetX[k1] * j2;
-							int j5 = par6 + Direction.OffsetZ[k1] * j2;
-							j4 += Direction.OffsetX[l] * j3;
-							j5 += Direction.OffsetZ[l] * j3;
-							int j6 = par3World.GetBlockId(j4, par5, j5);
-							int k6 = par3World.GetBlockMetadata(j4, par5, j5);
-
-							if (j6 != Block.EndPortalFrame.BlockID || !BlockEndPortalFrame.IsEnderEyeInserted(k6))
-							{
-								flag1 = false;
-								goto label0;
-							}
-
-							j3++;
-						}
-						while (true);
-					}
+				//Unreachable
+					//for (int j2 = i1 - 1; j2 <= j1 + 1; j2 += 4)
+					//{
+					//	int j3 = 1;
+					//
+					//	do
+					//	{
+					//		if (j3 > 3)
+					//		{
+					//			goto label0;
+					//		}
+					//
+					//		int j4 = par4 + Direction.OffsetX[k1] * j2;
+					//		int j5 = par6 + Direction.OffsetZ[k1] * j2;
+					//		j4 += Direction.OffsetX[l] * j3;
+					//		j5 += Direction.OffsetZ[l] * j3;
+					//		int j6 = par3World.GetBlockId(j4, par5, j5);
+					//		int k6 = par3World.GetBlockMetadata(j4, par5, j5);
+					//
+					//		if (j6 != Block.EndPortalFrame.BlockID || !BlockEndPortalFrame.IsEnderEyeInserted(k6))
+					//		{
+					//			flag1 = false;
+					//			goto label0;
+					//		}
+					//
+					//		j3++;
+					//	}
+					//	while (true);
+					//}
 
 					if (flag1)
 					{

@@ -60,12 +60,6 @@ namespace net.minecraft.src
 		{
 			if (par9 == 1)
 			{
-				bool flag = false;
-				bool flag1 = false;
-				bool flag2 = false;
-				bool flag3 = false;
-				double d1 = 0.0F;
-				double d3 = 0.0F;
 				int k2 = 0;
 				double d5 = 1.0D / par17;
 
@@ -113,12 +107,7 @@ namespace net.minecraft.src
 			int j = 0;
 			double d = 1.0D / par17;
 			int j1 = -1;
-			bool flag4 = false;
-			bool flag5 = false;
-			bool flag6 = false;
-			bool flag7 = false;
-			bool flag8 = false;
-			bool flag9 = false;
+
 			double d6 = 0.0F;
 			double d8 = 0.0F;
 			double d9 = 0.0F;

@@ -172,7 +172,7 @@ namespace net.minecraft.src
 		/// <summary>
 		/// Ticks the block if it's been scheduled
 		/// </summary>
-		public virtual void UpdateTick(World par1World, int par2, int par3, int par4, Random par5Random)
+		public virtual new void UpdateTick(World par1World, int par2, int par3, int par4, Random par5Random)
 		{
 			bool flag = IsIndirectlyPowered(par1World, par2, par3, par4);
 
@@ -234,7 +234,7 @@ namespace net.minecraft.src
 		/// <summary>
 		/// Returns the ID of the items to drop on destruction.
 		/// </summary>
-		public virtual int IdDropped(int par1, Random par2Random, int par3)
+		public virtual new int IdDropped(int par1, Random par2Random, int par3)
 		{
 			return Block.TorchRedstoneActive.BlockID;
 		}
@@ -250,7 +250,7 @@ namespace net.minecraft.src
 		/// <summary>
 		/// A randomly called display update to be able to add particles or other items for display
 		/// </summary>
-		public virtual void RandomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
+		public virtual new void RandomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
 		{
 			if (!TorchActive)
 			{

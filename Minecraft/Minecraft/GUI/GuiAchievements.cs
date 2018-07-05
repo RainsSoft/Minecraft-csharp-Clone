@@ -67,7 +67,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Adds the buttons (and other controls) to the screen in question.
         ///</summary>
-        public void InitGui()
+        public new void InitGui()
         {
             ControlList.Clear();
             ControlList.Add(new GuiSmallButton(1, Width / 2 + 24, Height / 2 + 74, 80, 20, StatCollector.TranslateToLocal("gui.done")));
@@ -76,7 +76,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Fired when a control is clicked. This is the equivalent of ActionListener.actionPerformed(ActionEvent e).
         ///</summary>
-        protected void ActionPerformed(GuiButton par1GuiButton)
+        protected new void ActionPerformed(GuiButton par1GuiButton)
         {
             if (par1GuiButton.Id == 1)
             {
@@ -90,7 +90,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Fired when a key is typed. This is the equivalent of KeyListener.keyTyped(KeyEvent e).
         ///</summary>
-        protected void KeyTyped(char par1, int par2)
+        protected new void KeyTyped(char par1, int par2)
         {
             if (par2 == Mc.GameSettings.KeyBindInventory.KeyCode)
             {
@@ -106,7 +106,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Draws the screen and all the components in it.
         ///</summary>
-        public void DrawScreen(int par1, int par2, float par3)
+        public new void DrawScreen(int par1, int par2, float par3)
         {
             //if (Mouse.isButtonDown(0))
             {
@@ -170,7 +170,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Called from the main game loop to update the screen.
         ///</summary>
-        public void UpdateScreen()
+        public new void UpdateScreen()
         {
             Field_27116_m = GuiMapX;
             Field_27115_n = GuiMapY;
@@ -457,7 +457,7 @@ namespace net.minecraft.src
         ///<summary>
         // Returns true if this GUI should pause the game when it is displayed in single-player
         ///</summary>
-        public bool DoesGuiPauseGame()
+        public new bool DoesGuiPauseGame()
         {
             return true;
         }

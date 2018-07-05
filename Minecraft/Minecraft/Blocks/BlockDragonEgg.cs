@@ -133,7 +133,7 @@ namespace net.minecraft.src
         ///<summary>
         /// How many world ticks before ticking
         ///</summary>
-        public int TickRate()
+        public new static int TickRate()
         {
             return 3;
         }
@@ -141,7 +141,7 @@ namespace net.minecraft.src
         ///<summary>
         /// Checks to see if its valid to put this block at the specified coordinates. Args: world, x, y, z
         ///</summary>
-        public bool CanPlaceBlockAt(World par1World, int par2, int par3, int par4)
+        public new bool CanPlaceBlockAt(World par1World, int par2, int par3, int par4)
         {
             return base.CanPlaceBlockAt(par1World, par2, par3, par4);
         }
@@ -150,7 +150,7 @@ namespace net.minecraft.src
         /// Is this block (a) opaque and (b) a full 1m cube?  This determines whether or not to render the shared face of two
         /// adjacent blocks and also whether the player can attach torches, redstone wire, etc to this block.
         ///</summary>
-        public bool IsOpaqueCube()
+        public new static bool IsOpaqueCube()
         {
             return false;
         }
@@ -158,7 +158,7 @@ namespace net.minecraft.src
         ///<summary>
         /// If this block doesn't render as an ordinary block it will return False (examples: signs, buttons, stairs, etc)
         ///</summary>
-        public bool RenderAsNormalBlock()
+        public new static bool  RenderAsNormalBlock()
         {
             return false;
         }
@@ -166,7 +166,7 @@ namespace net.minecraft.src
         ///<summary>
         /// The type of render function that is called for this block
         ///</summary>
-        public int GetRenderType()
+        public new static int GetRenderType()
         {
             return 27;
         }
