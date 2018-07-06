@@ -31,8 +31,10 @@ namespace net.minecraft.src
 
 				string s = file.Name;
 				WorldInfo worldinfo = GetWorldInfo(s);
+				
+				Console.WriteLine("the current loading world " + s);
 
-				if (worldinfo == null || worldinfo.GetSaveVersion() != 19132 && worldinfo.GetSaveVersion() != 19133)
+				if (worldinfo == null)
 				{
 					continue;
 				}

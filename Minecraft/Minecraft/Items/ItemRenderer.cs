@@ -65,11 +65,11 @@ namespace net.minecraft.src
 				float f1 = ((float)((i % 16) * 16) + 15.99F) / 256F;
 				float f2 = ((float)((i / 16) * 16) + 0.0F) / 256F;
 				float f3 = ((float)((i / 16) * 16) + 15.99F) / 256F;
-				float f4 = 0.0F;
-				float f5 = 0.3F;
+			//	float f4 = 0.0F;
+			//	float f5 = 0.3F;
 				//GL.Enable(EnableCap.RescaleNormal);
 				//GL.Translate(-f4, -f5, 0.0F);
-				float f6 = 1.5F;
+			//	float f6 = 1.5F;
 				//GL.Scale(f6, f6, f6);
 				//GL.Rotate(50F, 0.0F, 1.0F, 0.0F);
 				//GL.Rotate(335F, 0.0F, 0.0F, 1.0F);
@@ -83,11 +83,11 @@ namespace net.minecraft.src
 					Mc.RenderEngineOld.BindTexture(Mc.RenderEngineOld.GetTexture("%blur%/misc/glint.png"));
 					//GL.Enable(EnableCap.Blend);
 					//GL.BlendFunc(BlendingFactorSrc.One, BlendingFactorDest.One);
-					float f7 = 0.76F;
+				//	float f7 = 0.76F;
 					//GL.Color4(0.5F * f7, 0.25F * f7, 0.8F * f7, 1.0F);
 					//GL.MatrixMode(MatrixMode.Texture);
 					//GL.PushMatrix();
-					float f8 = 0.125F;
+				//	float f8 = 0.125F;
 					//GL.Scale(f8, f8, f8);
 					float f9 = ((float)(JavaHelper.CurrentTimeMillis() % 3000L) / 3000F) * 8F;
 					//GL.Translate(f9, 0.0F, 0.0F);
@@ -244,7 +244,7 @@ namespace net.minecraft.src
 			if (itemstack != null && itemstack.ItemID == Item.Map.ShiftedIndex)
 			{
 				//GL.PushMatrix();
-				float f5 = 0.8F;
+			//	float f5 = 0.8F;
 				float f9 = entityplayersp.GetSwingProgress(par1);
 				float f14 = MathHelper2.Sin(f9 * (float)Math.PI);
 				float f20 = MathHelper2.Sin(MathHelper2.Sqrt_float(f9) * (float)Math.PI);
@@ -279,7 +279,7 @@ namespace net.minecraft.src
 					//GL.Rotate(-65 * f20, 0.0F, 1.0F, 0.0F);
 					Render render1 = RenderManager.Instance.GetEntityRenderObject(Mc.ThePlayer);
 					RenderPlayer renderplayer1 = (RenderPlayer)render1;
-					float f34 = 1.0F;
+				//	float f34 = 1.0F;
 					//GL.Scale(f34, f34, f34);
 					renderplayer1.DrawFirstPersonHand();
 					//GL.PopMatrix();
@@ -315,7 +315,7 @@ namespace net.minecraft.src
 			else if (itemstack != null)
 			{
 				//GL.PushMatrix();
-				float f6 = 0.8F;
+			//	float f6 = 0.8F;
 
 				if (entityplayersp.GetItemInUseCount() > 0)
 				{
@@ -426,7 +426,7 @@ namespace net.minecraft.src
 			else
 			{
 				//GL.PushMatrix();
-				float f7 = 0.8F;
+			//	float f7 = 0.8F;
 				float f12 = entityplayersp.GetSwingProgress(par1);
 				float f18 = MathHelper2.Sin(f12 * (float)Math.PI);
 				float f26 = MathHelper2.Sin(MathHelper2.Sqrt_float(f12) * (float)Math.PI);

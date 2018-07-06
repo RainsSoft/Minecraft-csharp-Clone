@@ -40,6 +40,7 @@ namespace net.minecraft.src
 
 				if (worldinfo != null)
 				{
+					Console.WriteLine("Loaded a World");
 					arraylist.Add(new SaveFormatComparator(s, "", worldinfo.GetLastTimePlayed(), worldinfo.GetSizeOnDisk(), worldinfo.GetGameType(), false, worldinfo.IsHardcoreModeEnabled()));
 				}
 			}
@@ -64,10 +65,10 @@ namespace net.minecraft.src
 			}
 
             string file1 = IOPath.Combine(file, "level.dat");
-
 			if (File.Exists(file1))
 			{
-				//try
+				
+				try
 				{
                     MemoryStream stream = new MemoryStream();
                     using (var fs = new FileStream(file1, FileMode.Open))
@@ -79,11 +80,11 @@ namespace net.minecraft.src
 					NBTTagCompound nbttagcompound = CompressedStreamTools.ReadCompressed(stream);
 					NBTTagCompound nbttagcompound2 = nbttagcompound.GetCompoundTag("Data");
 					return new WorldInfo(nbttagcompound2);
-				}/*
+				}
 				catch (Exception exception)
 				{
                     Utilities.LogException(exception);
-				}*/
+				}
 			}
 
             file1 = IOPath.Combine(file, "level.dat_old");

@@ -559,32 +559,32 @@ namespace net.minecraft.src
             //GL.MatrixMode(MatrixMode.Projection);
             //GL.LoadIdentity();
 
-            if (mc.GameSettings.Anaglyph)
-            {
+       //     if (mc.GameSettings.Anaglyph)
+       //     {
                 //GL.Translate((float)(-(par2 * 2 - 1)) * f, 0.0F, 0.0F);
-            }
+        //    }
 
-            if (CameraZoom != 1.0D)
-            {
+        //    if (CameraZoom != 1.0D)
+        //    {
                 //GL.Translate((float)CameraYaw, (float)(-CameraPitch), 0.0F);
                 //GL.Scale(CameraZoom, CameraZoom, 1.0D);
-            }
+        //    }
 
             Matrix.CreatePerspectiveFieldOfView(GetFOVModifier(par1, true), (float)mc.DisplayWidth / (float)mc.DisplayHeight, 0.05F, farPlaneDistance * 2.0F);
 
-            if (mc.PlayerController.Func_35643_e())
-            {
-                float f1 = 0.6666667F;
+       //     if (mc.PlayerController.Func_35643_e())
+       //     {
+             //   float f1 = 0.6666667F;
                 //GL.Scale(1.0F, f1, 1.0F);
-            }
+      //      }
 
             //GL.MatrixMode(MatrixMode.Modelview);
             //GL.LoadIdentity();
 
-            if (mc.GameSettings.Anaglyph)
-            {
+       //     if (mc.GameSettings.Anaglyph)
+        //    {
                 //GL.Translate((float)(par2 * 2 - 1) * 0.1F, 0.0F, 0.0F);
-            }
+        //    }
 
             HurtCameraEffect(par1);
 
@@ -656,34 +656,34 @@ namespace net.minecraft.src
 
             //GL.MatrixMode(MatrixMode.Projection);
             //GL.LoadIdentity();
-            float f = 0.07F;
+        //    float f = 0.07F;
 
-            if (mc.GameSettings.Anaglyph)
-            {
+        //    if (mc.GameSettings.Anaglyph)
+        //    {
                 //GL.Translate((float)(-(par2 * 2 - 1)) * f, 0.0F, 0.0F);
-            }
+        //    }
 
-            if (CameraZoom != 1.0D)
-            {
+        //    if (CameraZoom != 1.0D)
+        //    {
                 //GL.Translate((float)CameraYaw, (float)(-CameraPitch), 0.0F);
                 //GL.Scale(CameraZoom, CameraZoom, 1.0D);
-            }
+         //   }
 
             Matrix.CreatePerspectiveFieldOfView(GetFOVModifier(par1, false), (float)mc.DisplayWidth / (float)mc.DisplayHeight, 0.05F, farPlaneDistance * 2.0F);
 
-            if (mc.PlayerController.Func_35643_e())
-            {
-                float f1 = 0.6666667F;
+        //    if (mc.PlayerController.Func_35643_e())
+        //    {
+             //   float f1 = 0.6666667F;
                 //GL.Scale(1.0F, f1, 1.0F);
-            }
+        //    }
 
             //GL.MatrixMode(MatrixMode.Modelview);
             //GL.LoadIdentity();
 
-            if (mc.GameSettings.Anaglyph)
-            {
+        //    if (mc.GameSettings.Anaglyph)
+        //    {
                 //GL.Translate((float)(par2 * 2 - 1) * 0.1F, 0.0F, 0.0F);
-            }
+        //    }
 
             //GL.PushMatrix();
             HurtCameraEffect(par1);
@@ -732,7 +732,7 @@ namespace net.minecraft.src
             OpenGlHelper.SetActiveTexture(OpenGlHelper.LightmapTexUnit);
             //GL.MatrixMode(MatrixMode.Texture);
             //GL.LoadIdentity();
-            float f = 0.00390625F;
+        //    float f = 0.00390625F;
             //GL.Scale(f, f, f);
             //GL.Translate(8F, 8F, 8F);
             //GL.MatrixMode(MatrixMode.Modelview);
@@ -1240,7 +1240,7 @@ namespace net.minecraft.src
                 RenderRainSnow(par1);
                 //GL.Disable(EnableCap.Fog);
 
-                if (pointedEntity == null) ;
+                if (pointedEntity == null);
 
                 if (mc.GameSettings.ShouldRenderClouds())
                 {

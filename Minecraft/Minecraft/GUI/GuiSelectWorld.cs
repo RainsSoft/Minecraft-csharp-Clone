@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text;
+using System;
 
 namespace net.minecraft.src
 {
@@ -83,6 +84,7 @@ namespace net.minecraft.src
 			SaveList = isaveformat.GetSaveList();
 			SaveList.Sort();
 			SelectedWorld = -1;
+			Console.WriteLine(SaveList.Count + " is total loaded saves");
 		}
 
 		/// <summary>
