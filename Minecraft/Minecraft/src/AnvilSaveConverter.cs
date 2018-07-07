@@ -130,16 +130,21 @@ namespace net.minecraft.src
 				worldinfo.SetTerrainType(WorldType.DEFAULT);
 			}
 
-			Func_48429_d(par1Str);
+			createFile(par1Str);
 			ISaveHandler isavehandler = GetSaveLoader(par1Str, false);
 			isavehandler.SaveWorldInfo(worldinfo);
 			return true;
 		}
-
-		private void Func_48429_d(string par1Str)
+		
+	
+        /// <summary>
+		/// par: filename for the level.dat_mcr backup
+		/// </summary>
+		private void createFile(string par1Str)
 		{
 			string file = IOPath.Combine(SavesDirectory, par1Str);
-
+			
+			//PROBLEMS AHHHHHH
 			if (!File.Exists(file))
 			{
 				Console.WriteLine("Warning: Unable to create level.dat_mcr backup");

@@ -16,3 +16,5 @@ C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\bin
 C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\bin\x86\Debug\OggSharpLib.dll
 C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\obj\x86\Debug\Minecraft.csprojResolveAssemblyReference.cache
 C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\bin\x86\Debug\MonoGame.Framework.Windows.dll
+C:\Users\Michael\Documents\GitHub\Minecraft-csharp-Clone\Minecraft\Minecraft\bin\x86\Debug\OpenTK.dll

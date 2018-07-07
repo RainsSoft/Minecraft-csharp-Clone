@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -53,11 +54,16 @@ namespace net.minecraft.src
             missingTexture = new Texture2D(GraphicsDevice, 64, 64);
         }
 
+        
+
+        
         public bool LoadResourceTexture(string name)
         {
             try
             {
-                var texture = Texture2D.FromStream(GraphicsDevice, Minecraft.GetResourceStream(name));
+            	//Image test = Image.FromStream(Minecraft.GetResourceStream(name));
+            	//Texture2D texture = new Texture2D(GraphicsDevice, Minecraft.GetResourceStream(name));
+            	var texture = Texture2D.FromStream(GraphicsDevice, Minecraft.GetResourceStream(name));
                 textureMap.Add(name, texture);
             }
             catch(Exception e)
@@ -120,10 +126,10 @@ namespace net.minecraft.src
 
         public void StartDrawing()
         {
-            StartDrawing(Color.Black);
+            StartDrawing(Microsoft.Xna.Framework.Color.Black);
         }
 
-        public void StartDrawing(Color clearColor)
+        public void StartDrawing(Microsoft.Xna.Framework.Color clearColor)
         {
             isDrawing = true;
 
@@ -160,7 +166,7 @@ namespace net.minecraft.src
             BindTexture(texture);
         }
 
-        public void RenderSprite(string textureName, Rectangle destination)
+        public void RenderSprite(string textureName, Microsoft.Xna.Framework.Rectangle destination)
         {
             if (!textureMap.ContainsKey(textureName))
             {
@@ -177,25 +183,25 @@ namespace net.minecraft.src
                 return;
             }
 
-            SpriteBatch.Draw(textureMap[textureName], destination, Color.White);
+            SpriteBatch.Draw(textureMap[textureName], destination, Microsoft.Xna.Framework.Color.White);
         }
 
-        public void RenderSprite(Rectangle destination, RectangleF source)
+        public void RenderSprite(Microsoft.Xna.Framework.Rectangle destination, RectangleF source)
         {
             RenderSprite(destination, source, 0);
         }
 
-        public void RenderSprite(Rectangle destination, RectangleF source, float depth)
+        public void RenderSprite(Microsoft.Xna.Framework.Rectangle destination, RectangleF source, float depth)
         {
             RenderSprite(destination, GetDefiniteRectangle(boundTexture, source), depth);
         }
 
-        public void RenderSprite(Rectangle destination, Rectangle? source)
+        public void RenderSprite(Microsoft.Xna.Framework.Rectangle destination, Microsoft.Xna.Framework.Rectangle? source)
         {
             RenderSprite(destination, source, 0);
         }
 
-        public void RenderSprite(Rectangle destination, Rectangle? source, float depth)
+        public void RenderSprite(Microsoft.Xna.Framework.Rectangle destination, Microsoft.Xna.Framework.Rectangle? source, float depth)
         {
             if (!isDrawing)
             {
@@ -211,7 +217,7 @@ namespace net.minecraft.src
                 return;
             }
 
-            SpriteBatch.Draw(boundTexture, GetResizedRectangle(destination), source, Color.White);
+            SpriteBatch.Draw(boundTexture, GetResizedRectangle(destination), source, Microsoft.Xna.Framework.Color.White);
         }
 
         public Vector2 GetDisplayScaler()
@@ -225,7 +231,7 @@ namespace net.minecraft.src
             return new Vector2(diffX, diffY);
         }
 
-        public Rectangle GetResizedRectangle(Rectangle r)
+        public Microsoft.Xna.Framework.Rectangle GetResizedRectangle(Microsoft.Xna.Framework.Rectangle r)
         {
             var scaler = GetDisplayScaler();
             return new RectangleF(r.X * scaler.X, r.Y * scaler.Y, r.Width * scaler.X, r.Height * scaler.Y).ToRectangle();
@@ -236,9 +242,9 @@ namespace net.minecraft.src
             return new ScaledResolution(mc.GameSettings, mc.DisplayWidth, mc.DisplayHeight);
         }
 
-        public Rectangle GetDefiniteRectangle(Texture2D texture, RectangleF rectangleF)
+        public Microsoft.Xna.Framework.Rectangle GetDefiniteRectangle(Texture2D texture, RectangleF rectangleF)
         {
-            return new Rectangle((int)(texture.Width * rectangleF.X), (int)(texture.Height * rectangleF.Y), (int)(texture.Width * rectangleF.Width), (int)(texture.Height * rectangleF.Height));
+            return new Microsoft.Xna.Framework.Rectangle((int)(texture.Width * rectangleF.X), (int)(texture.Height * rectangleF.Y), (int)(texture.Width * rectangleF.Width), (int)(texture.Height * rectangleF.Height));
         }
 
         public void SetView(Matrix matrix)

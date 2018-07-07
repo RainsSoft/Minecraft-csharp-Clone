@@ -618,11 +618,16 @@ namespace net.minecraft.src
             }
         }*/
         
+
+        
         /// <summary>
         /// Called repeatedly from run()
         /// </summary>
         protected override void  Update(GameTime gameTime)
         {
+        	
+        	
+        	
  	         base.Update(gameTime);
 
             AxisAlignedBB.ClearBoundingBoxPool();
